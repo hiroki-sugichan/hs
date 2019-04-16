@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>mathematics</title>
+    <script src="https://use.fontawesome.com/e0c7117749.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
+  </head>
+  <body>
+    <header>
+      <h1>welcome. we educate you to improve mathmatic skill.</h1>
+    </header>
+
+    <div class="briefly-lessons">
+      <div class="lessoncover">
+        <h2 class="lesson-title">極限</h2>
+          <ul>
+            <li>極限</li>
+            <li>数列と極限</li>
+            <li>無限級数</li>
+            <li>関数の極限</li>
+          </ul>
+        <h2 class="lesson-title">微分</h2>
+          <ul>
+            <li>微分の仕組み</li>
+            <li>導関数</li>
+            <li>coming soon</li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="lesson">
+<!--ここから導入コンテナ-->
+      <div class="container">
+        <!--この範囲をphpでインスタンス生成して大量に作る　or WordPressで作成-->
+        <div class="page p1 show">
+          <div class="close">
+            <p><i class="fa fa-times" aria-hidden="true"></i></p>
+          </div>
+
+          <div class="title">
+            <p>微分の仕組み</p>
+          </div>
+
+          <div class="slide-button">
+            <p><i class="fa left fa-hand-o-left fa-2x" aria-hidden="true">前へ</i></p>
+            <p><i class="fa right fa-hand-o-right fa-2x" aria-hidden="true">次へ</i></p>
+          </div>
+
+          <div class="image">
+            <p>関数 \(f(x)\) の導関数は
+            \[
+            f’(x) = \lim_{\varDelta x \to 0} \frac{ f(x+\varDelta x) - f(x) }{\varDelta x}
+            \]
+            である。
+            </p>
+          </div>
+
+          <div class="text">
+            <p>微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう微分の解き方はこう</p>
+          </div>
+        </div>
+<!--この範囲をphpでインスタンス生成して大量に作る　or WordPressで作成-->
+        <!--ここからテストphpでclass書けたら消す-->
+        <div class="page p2">
+          <div class="close">
+            <p>&times</p>
+          </div>
+
+          <div class="title">
+            <p>微分</p>
+          </div>
+
+          <div class="slide-button">
+            <p><i class="fa left fa-hand-o-left fa-2x" aria-hidden="true">前へ</i></p>
+            <p><i class="fa right fa-hand-o-right fa-2x" aria-hidden="true">次へ</i></p>
+          </div>
+
+          <div class="image">
+            <p>MathJax の使い方を練習します。<br>一次方程式 \(ax+b=0\) の解は\[x = -\frac{b}{a}\]です。</p>
+          </div>
+
+          <div class="text">
+            <p>mathjax練習だよ。mathjax練習だよ。mathjax練習だよ。mathjax練習だよ。mathjax練習だよ。mathjax練習だよ。mathjax練習だよ。mathjax練習だよ。mathjax練習だよ。mathjax練習だよ。mathjax練習だよ。mathjax練習だよ。mathjax練習だよ。mathjax練習だよ。mathjax練習だよ。mathjax練習だよ。mathjax練習だよ。mathjax練習だよ。mathjax練習だよ。mathjax練習だよ。</p>
+          </div>
+        </div>
+        <!--ここまでテスト-->
+      </div>
+<!--ここまで導入コンテナ-->
+<!--この範囲をphpでインスタンス生成して大量に作るor WordPressで作成-->
+      <div class="question">
+        <p>question1</p>
+        <form class="answerbox" action="#" method="post">
+          <input type="text" name="" placeholder="answer">
+          <input type="submit" name="" value="解答">
+        </form>
+      </div>
+<!--この範囲をphpでインスタンス生成して大量に作るor WordPressで作成-->
+      <div class="question">
+        <p>question2</p>
+        <form class="answerbox" action="#" method="post">
+          <input type="text" name="" placeholder="answer">
+          <input type="submit" name="" value="解答">
+        </form>
+      </div>
+
+      <div class="question">
+        <p>question3</p>
+        <form class="answerbox" action="#" method="post">
+          <input type="text" name="" placeholder="answer">
+          <input type="submit" name="" value="解答">
+        </form>
+      </div>
+
+        <div class="show-slide">
+          <p>もう一度スライドを見る</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    $(function(){
+      //containder fadeout function
+      $('.close').click(function(){
+        $('.container').fadeOut('slow');
+      });
+      //container show function
+      $('.show-slide').click(function(){
+        $('.container').fadeIn('slow');
+      });
+    });
+    </script>
+  </body>
+</html>

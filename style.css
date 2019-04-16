@@ -1,0 +1,181 @@
+body{
+  margin:0;
+  font-size: 14px;
+  font-family:"YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+  box-sizing: border-box;
+  text-decoration: none;
+}
+header{
+  width:100%;
+  height:60px;
+  background-color: royalblue;
+  margin:0 auto;
+  position: fixed;
+  z-index: 1;
+}
+header h1{
+  color: white;
+  margin:0 auto;
+  padding-left: 10px;
+}
+/*左側のレッスン一覧*/
+.briefly-lessons{
+  float:left;
+  width:10vw;
+  background-color: rgb(175, 212, 251);
+  height:100vh;
+  padding-top:80px;
+}
+.lessoncover{
+  position:sticky;
+  position: -webkit-sticky;
+  top:60px;
+}
+.lesson-title{
+  color:rgb(37, 37, 37);
+  padding-left:5px;
+  font-weight: normal;
+}
+.briefly-lessons li{
+  list-style: none;
+  cursor: pointer;
+}
+.briefly-lessons li:hover{
+  color:white;
+}
+/*レッスン一覧ここまで*/
+.lesson{
+  width:100%;
+  height:100vh;
+  background-color: rgb(20, 140, 208);
+  text-align: center;
+}
+/*ここからレッスンコンテナ*/
+  .container{
+    width:calc(100%-30px);
+    height:calc(100%-20px);
+    background-color: lightblue;
+    text-align: center;
+    margin:20px;
+    padding:40px;
+    overflow: hidden;
+    z-index: 2;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border-radius: 10px;
+    position: fixed;
+    }
+    .page{
+      display:none;
+    }
+    .close p{
+      float:right;
+      margin:0;
+      font-size:40px;
+      height: 40px;
+      cursor:pointer;
+    }
+    .title{
+      margin:20px 40px;
+      background-color: lightgreen;
+      border-color:2px solid green;
+      border-radius: 60px;
+      padding:7px 0;
+    }
+    .title p{
+      font-size: 24px;
+    }
+    .slide-button{
+      display:block;
+      height: 20px;
+    }
+    .fa-hand-o-left{
+      float:left;
+    }
+    .fa-hand-o-right{
+      float:right;
+    }
+    .fa{
+      font-size: 20px;
+      cursor:pointer;
+    }
+    .fa:hover{
+      color:black;
+    }
+    .image,.text{
+      margin:10vh auto;
+      padding:40px;
+      width:35vw;
+      height:40vh;
+    }
+    .image{
+      float:left;
+      background-color: lightgreen;
+      margin-left:40px;
+    }
+    .text{
+      float:right;
+      overflow: scroll;
+      background-color: lightgreen;
+      margin-right:40px;
+    }
+    .container p{
+      font-size:24px;
+      line-height: 27px;
+      color: rgb(65, 65, 65);
+    }
+/*レッスンコンテナ操作用ｃｓｓ*/
+.show{
+  display:block;
+}
+/*操作用ｃｓｓここまで*/
+
+/*ここまでレッスンコンテナ*/
+.show-slide p{
+  cursor:pointer;
+  font-size: 20px;
+  display:inline-block;
+}
+.question{
+  padding-top:80px;
+  margin: 0 auto;
+}
+  .question p{
+    background-color: white;
+    display: inline-block;
+    color:rgb(48, 48, 48);
+    padding:20px;
+    border-radius: 10px;
+  }
+  .answerbox{
+    margin: 0 auto;
+  }
+  input{
+    padding:10px;
+    text-align: center;
+    background-color:black;
+    border:2px solid black;
+    border-radius: 20px;
+    outline: none;
+    color: white;
+    transition: 0.3s;
+  }
+  input[type='submit']{
+    padding:10px 20px;
+    border-radius: 30px;
+    color: white;
+  }
+  input[type='text']:focus{
+    padding: 20px;
+    background-color: rgb(78, 78, 78);
+    border-radius: 40px;
+  }
+  input[type='submit']:hover{
+    background-color: rgb(78, 78, 78);
+  }
+.show-slide p:hover{
+  color:white;
+}
